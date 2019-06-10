@@ -14,7 +14,8 @@
 	}
 	
 	nav{
-		width: 200px;
+		
+		flex: 0 0 200px;
 		
 		
 	}
@@ -22,6 +23,8 @@
 		width: 80%;
 		margin: 0 auto;
 		background-color:   #222222;
+		overflow: hidden;
+		
 	}
 	.box{
 		display: flex;
@@ -36,8 +39,14 @@
 		background-color: #EEEEEE;
 	}	
 	.disp1{
-		width: 100%;
-		box-shadow: #1B6D85;
+		display: flex;
+		
+		justify-content: center;
+		align-items: center;
+	}
+	.disp_text{
+		font-size: 10rem;	
+		
 	}
 </style>
 </head>
@@ -55,7 +64,7 @@
 			<div id="item1">
 				<h1>item1</h1>
 				<div class="disp1">
-					
+					<p class="disp_text">CSS+Javascript特效展示</p>
 				</div>
 			</div>
 			<div id="item2">
