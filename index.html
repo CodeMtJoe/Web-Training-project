@@ -19,26 +19,26 @@
 				<li><a href="#item4">留言区</a></li>
 			</ul>
 		</nav>
-		<div class="main">
-			<div id="item1">
+		<div id="main">
+			<div id="item1" class="item">
 				
 				<div class="disp1">
 					<p class="disp_text">CSS+Javascript特效展示</p>
 				</div>
 			</div>
-			<div id="item2">
+			<div id="item2" class="item">
 				<h1>图片轮播效果</h1>
 				<div class="disp2">
 					
 				</div>
 			</div>
-			<div id="item3">
+			<div id="item3" class="item">
 				<h1>item3</h1>
 			</div>
-			<div id="item4">
+			<div id="item4" class="item">
 				<h1>item4</h1>
 			</div>
-			<div id="item5">
+			<div id="item5" class="item">
 				<h1>item5</h1>
 			</div>
 		</div>
@@ -49,5 +49,35 @@
 	<script type="text/javascript" src="js/bootstrap.min.js">
 		
 	</script>
+	<script type="text/javascript">
+		$(function(){		
+			var items=$('#main').find('.item');
+			var itemID="";
+			$(window).scroll(function(){	
+				var top=$(document).scrollTop();
+				 console.log(top);
+				
+				
+				items.each(function(){
+					var m=$(this);
+					var itemTop=m.offset().top;
+					//console.log(itemTop);
+					if(top>itemTop){
+						itemID="#"+m.attr('id');
+						
+					}else{
+						return false;
+					}
+				
+				});
+				
+				
+			})
+			});
+			
+			
+	</script>
+
+
 </body>
 </html>
