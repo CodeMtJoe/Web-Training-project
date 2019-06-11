@@ -105,19 +105,23 @@
 			return document.getElementById(id);
 		}
 		var bigImg=$$('big_img');var smImgList=$$('small_img').querySelectorAll('li');
-		var j=0;
+		var j=1;
+		var b=0
 		
 		//封装函数
 		function changeImg(){
 			for(var k=0;k<smImgList.length;k++){
 				smImgList[k].removeAttribute('class');
 			}
-			bigImg.src="img/"+j+".jpg";
-			smImgList[j].className='img_xz';
-			j++;
 			console.log(j);
-			if(j>=3){
-				j=0;
+			bigImg.src="img/"+j+".jpg";
+			smImgList[b].className='img_xz';
+			j++;
+			b++;
+			console.log(j);
+			if(j>=3&&b>=3){
+				j=1;
+				b=0;
 				
 			
 			}
