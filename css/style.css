@@ -29,7 +29,7 @@
 	.nav-stacked a:hover,
 	.act{
 		color: #222;
-		background-color: #EEEEEE;
+		background-color: rgba(255,255,255,.5);
 	}	
 	.disp1{
 		display: flex;
@@ -45,3 +45,31 @@
 		width: 100%;
 		
 	}
+	.disp2{
+		display: flex;
+		justify-content: center;
+		margin-left: 150px;
+	}
+	.big_img img {
+		width: 956px;
+		height: 497px;
+		border-radius: 20px;
+		
+	}
+	.small_img li{
+		margin: 30px;
+		border: #EEEEEE solid 2px;
+		box-shadow: 0 0 10px #EEEEEE ;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+	.img_xz{
+		box-shadow: 0 0 30px orangered !important ;
+	}
+	.small_img li img{
+		width: 150px;
+		height: 100px;
+		cursor: pointer;
+		
+	}
+	

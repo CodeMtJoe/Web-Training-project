@@ -25,14 +25,21 @@
 			<div id="item1" class="item">
 				
 				<div class="disp1">
-					<p class="disp_text">CSS+Javascript特效展示</p>
+					<p class="disp_text">CSS3+Javascript特效展示</p>
 				</div>
 			</div>
 			<!-- 轮播图展示 -->
 			<div id="item2" class="item">
-				<h1>图片轮播效果</h1>
-				<div class="disp1">
-					<p class="disp_text">CSS+Javascript特效展示</p>
+				<h1 style="text-align: center;">图片轮播效果</h1>
+				<div class="disp2">
+						<div class="big_img" >
+							<img id="big_img" src="img/1.jpg" >			
+						</div>
+					<ul class="small_img" id="small_img">
+						<li href="#"><img src='img/1.jpg'></li>
+						<li href="#"><img src='img/2.jpg'></li>
+						<li href="#"><img src='img/3.jpg'></li>	
+					</ul>
 				</div>
 			</div>
 			
@@ -93,7 +100,31 @@
 				}				
 			})
 			});
-		//轮播图
+		//轮播图 原生js
+			function $$(id){
+			return document.getElementById(id);
+		}
+		var bigImg=$$('big_img');var smImgList=$$('small_img').querySelectorAll('li');
+		var j=0;
+		
+		//封装函数
+		function changeImg(){
+			for(var k=0;k<smImgList.length;k++){
+				smImgList[k].removeAttribute('class');
+			}
+			bigImg.src="img/"+j+".jpg";
+			smImgList[j].className='img_xz';
+			j++;
+			console.log(j);
+			if(j>=3){
+				j=0;
+				
+			
+			}
+			//console.log(bigImg.getAttribute('src'));	
+		}
+		setInterval("changeImg()",2000);
+		
 			
 			
 	</script>
