@@ -10,13 +10,15 @@
 </head>
 <body>
 	<div class="box">
+		<!-- 导航区域 -->
 		<nav>
 			<ul class="nav navbar-inverse nav-stacked">
 				<li><img src="img/lo1go-e1558656878447.jpg" ></li>
-				<li><a href="#item1" class="act">首页</a></li>
-				<li><a href="#item2">轮播图</a></li>
+				<li><a href="#item1"  class="act">首页</a></li>
+				<li><a href="#item2" >轮播图</a></li>
 				<li><a href="#item3">登陆注册模块</a></li>
 				<li><a href="#item4">留言区</a></li>
+				<li><a href="#item5">待添加...</a></li>
 			</ul>
 		</nav>
 		<div id="main">
@@ -29,20 +31,29 @@
 			<!-- 轮播图展示 -->
 			<div id="item2" class="item">
 				<h1>图片轮播效果</h1>
-				<div class="disp2">
-					
+				<div class="disp1">
+					<p class="disp_text">CSS+Javascript特效展示</p>
 				</div>
 			</div>
 			
 			
 			<div id="item3" class="item">
 				<h1>item3</h1>
+				<div class="disp1">
+					<p class="disp_text">CSS+Javascript特效展示</p>
+				</div>
 			</div>
 			<div id="item4" class="item">
 				<h1>item4</h1>
+				<div class="disp1">
+					<p class="disp_text">CSS+Javascript特效展示</p>
+				</div>
 			</div>
 			<div id="item5" class="item">
 				<h1>item5</h1>
+				<div class="disp1">
+					<p class="disp_text">CSS+Javascript特效展示</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -53,28 +64,33 @@
 		
 	</script>
 	<script type="text/javascript">
-		$(function(){		
+		$(function(){	
+			//定位导航
+			var main=$('nav');
+			//var abc=$("[href='#item4']").addClass('act');
 			var items=$('#main').find('.item');
-			var itemID="";
+			//console.log(abc);		
 			$(window).scroll(function(){	
 				var top=$(document).scrollTop();
-				 console.log(top);
-				
+				// console.log(top);
+				var itemID="";
 				
 				items.each(function(){
 					var m=$(this);
 					var itemTop=m.offset().top;
 					//console.log(itemTop);
-					if(top>itemTop){
-						itemID="#"+m.attr('id');
-						
+					if(top>itemTop-200){
+						itemID="#"+m.attr('id');										
 					}else{
 						return false;
-					}
-				
+					}				
 				});
-				
-				
+
+				var itemLink=$('nav').find('.act');
+				if(itemID && itemLink.attr('href')!=itemID){
+					itemLink.removeClass('act');
+					var ssss=main.find("[href="+"'"+itemID+"'"+"]").addClass('act')
+				}				
 			})
 			});
 		//轮播图
