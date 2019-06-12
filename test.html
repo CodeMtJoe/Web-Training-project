@@ -1,20 +1,39 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-	</head>
-	<body>
-		<div class="container">
-					<div class="jumbotron">
-				<h1>hello world</h1>
-			</div>
-			
-		</div>
-		<script type="text/javascript" src="js/jquery-1.12.4.js">
-			
-		</script>
 
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jQuery点击调色板变换背景</title>
+<link rel="stylesheet" href="css/color.css">
+</head>
+<style type="text/css">
+	.box{
+		width: 100px;
+		height: 100px;
+		display: flex;
+	}
+</style>
+<body>
+<div class="box wrapper">
+	
+	<div class="palette">
+	<div class="palette_item_wrapper">
+	<div data-color="#e169c3" class="palette_color"></div>
+	<div data-color="#b569e1" class="palette_color"></div>
+	<div data-color="#7169e1" class="palette_color"></div>
+	<div data-color="#69b8e1" class="palette_color"></div>
+	<div data-color="#69e1d4" class="palette_color"></div>
+	<div data-color="#6ce169" class="palette_color"></div>
+	<div data-color="#bee169" class="palette_color"></div>
+	<div data-color="#e1a169" class="palette_color"></div>
+	<div data-color="#83091d" class="palette_color"></div>
+	<div data-color="#83091d" class="palette_color"></div>
+	</div>
+	<div class="palette_color__main"></div>
+	</div>
+	
+</div>
+<script src="js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="js/color.js"></script>
+</body>
 </html>

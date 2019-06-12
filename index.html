@@ -1,167 +1,188 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title></title>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-</head>
-<body>
-	<div class="box">
-		<!-- 导航区域 -->
-		<nav>
-			<ul class="nav navbar-inverse nav-stacked">
-				<li><img src="img/lo1go-e1558656878447.jpg" ></li>
-				<li><a href="#item1"  class="act">首页</a></li>
-				<li><a href="#item2" >轮播图</a></li>
-				<li><a href="#item3">登陆注册模块</a></li>
-				<li><a href="#item4">留言区</a></li>
-				<li><a href="#item5">待添加...</a></li>
-			</ul>
-			<div class="changeSkin">
-				换肤
-			</div>
-		</nav>
-		<div id="main">
-			<div id="item1" class="item">
-				<div class="disp1">
-					<p class="disp_text"><span style="background-color: #f69a1d;padding: 10px;border-radius: 10px;"><strong style="color: black;">KeyBoard</strong></span>Monster</p>
-				</div>
-			</div>
-			<!-- 轮播图展示 -->
-			<div id="item2" class="item">
-				<h1 style="text-align: center;">图片轮播效果</h1>
-				<div class="disp2">
-						<div class="big_img" >
-							<img id="big_img" src="img/1.jpg" >			
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!-- 调色板 -->
+		<link rel="stylesheet" type="text/css" href="css/color.css"/>
+	</head>
+	<body>
+		<div class="box ">
+			<!-- 导航区域 -->
+			<nav>
+				<ul class="nav navbar-inverse nav-stacked">
+					<li><img src="img/lo1go-e1558656878447.jpg"></li>
+					<li><a href="#item1" class="act">首页</a></li>
+					<li><a href="#item2">轮播图</a></li>
+					<li><a href="#item3">登陆注册模块</a></li>
+					<li><a href="#item4">留言区</a></li>
+					<li><a href="#item5">待添加...</a></li>
+				</ul>
+				<!-- 换肤 -->
+				<div class="changeSkin">
+						<div class="palette">
+							<div class="palette_item_wrapper">
+							<div data-color="#e169c3" class="palette_color"></div>
+							<div data-color="#b569e1" class="palette_color"></div>
+							<div data-color="#7169e1" class="palette_color"></div>
+							<div data-color="#69b8e1" class="palette_color"></div>
+							<div data-color="#69e1d4" class="palette_color"></div>
+							<div data-color="#6ce169" class="palette_color"></div>
+							<div data-color="#bee169" class="palette_color"></div>
+							<div data-color="#e1a169" class="palette_color"></div>
+							<div data-color="#83091d" class="palette_color"></div>
+							<div data-color="#83091d" class="palette_color"></div>
+							</div>
+							<div class="palette_color__main"></div>
 						</div>
-					<ul class="small_img" id="small_img">
-						<li href="#"><img src='img/1.jpg'></li>
-						<li href="#"><img src='img/2.jpg'></li>
-						<li href="#"><img src='img/3.jpg'></li>	
-					</ul>
+					
 				</div>
-			</div>
-			
-			<!-- 登陆注册模块展示 -->
-			<div id="item3" class="item">
-				<h1 style="text-align: center;">登陆注册</h1>
-				<div class="disp3">
-					<div class="dips3_tp">
-						<div class="zhezhao1"><p>点击了解更多</p></div>
-						<a href="http://mtjoe.cn/comment/login.html" target="_blank"><img src="img/demo11.gif" ></a>
+			</nav>
+			<div id="main">
+				<div id="item1" class="item">
+					<div class="disp1">
+						<p class="disp_text"><span style="background-color: #f69a1d;padding: 10px;border-radius: 10px;"><strong style="color: black;">KeyBoard</strong></span>Monster</p>
+					</div>
+				</div>
+				<!-- 轮播图展示 -->
+				<div id="item2" class="item">
+					<h1 style="text-align: center;">图片轮播效果</h1>
+					<div class="disp2">
+						<div class="big_img">
+							<img id="big_img" src="img/1.jpg">
+						</div>
+						<ul class="small_img" id="small_img">
+							<li href="#"><img src='img/1.jpg'></li>
+							<li href="#"><img src='img/2.jpg'></li>
+							<li href="#"><img src='img/3.jpg'></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 登陆注册模块展示 -->
+				<div id="item3" class="item">
+					<h1 style="text-align: center;">登陆注册</h1>
+					<div class="disp3">
+						<div class="dips3_tp">
+							<div class="zhezhao1">
+								<p>点击了解更多</p>
+							</div>
+							<a href="http://mtjoe.cn/comment/login.html" target="_blank"><img src="img/demo11.gif"></a>
+						</div>
+					</div>
+				</div>
+				<!-- 留言区展示 -->
+				<div id="item4" class="item">
+					<h1 style="text-align: center;">评论留言区</h1>
+					<div class="disp4">
+						<div class="zhezhao2">
+							<p>点击了解更多</p>
+						</div>
+						<a href="http://mtjoe.cn/comment/comment/message.php" target="_blank"><img src="img/demo12.gif"></a>
+					</div>
+				</div>
+				<!-- 待添加 -->
+				<div id="item5" class="item">
+					<h1 style="text-align: center;"></h1>
+					<div class="disp1">
+						<p class="disp_text">广告招租</p>
 					</div>
 				</div>
 			</div>
-			<!-- 留言区展示 -->
-			<div id="item4" class="item">
-				<h1 style="text-align: center;">评论留言区</h1>
-				<div class="disp4">
-					<div class="zhezhao2"><p>点击了解更多</p></div>
-					<a href="http://mtjoe.cn/comment/comment/message.php" target="_blank"><img src="img/demo12.gif"></a>
-				</div>
-			</div>
-			<!-- 待添加 -->
-			<div id="item5" class="item">
-				<h1 style="text-align: center;"></h1>
-				<div class="disp1">
-					<p class="disp_text">广告招租</p>
-				</div>
-			</div>
 		</div>
-	</div>
-	<script type="text/javascript" src="js/jquery-1.12.4.js">
-		
-	</script>
-	<script type="text/javascript" src="js/bootstrap.min.js">
-		
-	</script>
-	<script type="text/javascript">
-		$(function(){	
-			//定位导航
-			var main=$('nav');
-			//var abc=$("[href='#item4']").addClass('act');
-			var items=$('#main').find('.item');
-			//console.log(abc);		
-			$(window).scroll(function(){	
-				var top=$(document).scrollTop();
-				// console.log(top);
-				var itemID="";
-				
-				items.each(function(){
-					var m=$(this);
-					var itemTop=m.offset().top;
-					//console.log(itemTop);
-					if(top>itemTop-200){
-						itemID="#"+m.attr('id');										
-					}else{
-						return false;
-					}				
-				});
+		<script type="text/javascript" src="js/jquery-1.12.4.js">
 
-				var itemLink=$('nav').find('.act');
-				if(itemID && itemLink.attr('href')!=itemID){
-					itemLink.removeClass('act');
-					var ssss=main.find("[href="+"'"+itemID+"'"+"]").addClass('act')
-				}				
-			})
+		</script>
+		<script type="text/javascript" src="js/bootstrap.min.js">
+
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				//定位导航
+				var main = $('nav');
+				//var abc=$("[href='#item4']").addClass('act');
+				var items = $('#main').find('.item');
+				//console.log(abc);		
+				$(window).scroll(function() {
+					var top = $(document).scrollTop();
+					// console.log(top);
+					var itemID = "";
+
+					items.each(function() {
+						var m = $(this);
+						var itemTop = m.offset().top;
+						//console.log(itemTop);
+						if (top > itemTop - 200) {
+							itemID = "#" + m.attr('id');
+						} else {
+							return false;
+						}
+					});
+
+					var itemLink = $('nav').find('.act');
+					if (itemID && itemLink.attr('href') != itemID) {
+						itemLink.removeClass('act');
+						var ssss = main.find("[href=" + "'" + itemID + "'" + "]").addClass('act')
+					}
+				})
 			});
-		//轮播图 原生js
-			function $$(id){
-			return document.getElementById(id);
-		}
-		var bigImg=$$('big_img');var smImgList=$$('small_img').querySelectorAll('li');
-		var j=1;
-		var b=0
-		
-		//封装函数
-		function changeImg(){
-			for(var k=0;k<smImgList.length;k++){
-				smImgList[k].removeAttribute('class');
+			//轮播图 原生js
+			function $$(id) {
+				return document.getElementById(id);
 			}
-			//console.log(j);
-			bigImg.src="img/"+j+".jpg";
-			smImgList[b].className='img_xz';
-			j++;
-			b++;
-			//console.log(j);
-			if(j>=3&&b>=3){
-				j=1;
-				b=0;
-				
-			
-			}
-			//console.log(bigImg.getAttribute('src'));	
-		}
-		//执行函数
-		setInterval("changeImg()",2000);
-		
-		//登陆注册特效实现
-		var zhezhao1=$('.dips3_tp').find('.zhezhao1');
-		var zhezhao2=$('.disp4').find('.zhezhao2');
-		var commentImg1=$('.dips3_tp').find('img');
-		var commentImg2=$('.disp4').find('img');
-		zhezhao1.mouseenter(function(){
-			$('.zhezhao1').fadeToggle();
-		});
-		commentImg1.mouseout(function(){
-			$('.zhezhao1').fadeIn();
-		});
-		zhezhao2.mouseenter(function(){
-			$('.zhezhao2').fadeToggle();
-		});
-		commentImg2.mouseout(function(){
-			$('.zhezhao2').fadeIn();
-		});		
-		
-		//换肤效果实现
-		
-			
-			
-	</script>
+			var bigImg = $$('big_img');
+			var smImgList = $$('small_img').querySelectorAll('li');
+			var j = 1;
+			var b = 0
+
+			//封装函数
+			function changeImg() {
+				for (var k = 0; k < smImgList.length; k++) {
+					smImgList[k].removeAttribute('class');
+				}
+				//console.log(j);
+				bigImg.src = "img/" + j + ".jpg";
+				smImgList[b].className = 'img_xz';
+				j++;
+				b++;
+				//console.log(j);
+				if (j >= 3 && b >= 3) {
+					j = 1;
+					b = 0;
 
 
-</body>
+				}
+				//console.log(bigImg.getAttribute('src'));	
+			}
+			//执行函数
+			setInterval("changeImg()", 2000);
+
+			//登陆注册特效实现
+			var zhezhao1 = $('.dips3_tp').find('.zhezhao1');
+			var zhezhao2 = $('.disp4').find('.zhezhao2');
+			var commentImg1 = $('.dips3_tp').find('img');
+			var commentImg2 = $('.disp4').find('img');
+			zhezhao1.mouseenter(function() {
+				$('.zhezhao1').fadeToggle();
+			});
+			commentImg1.mouseout(function() {
+				$('.zhezhao1').fadeIn();
+			});
+			zhezhao2.mouseenter(function() {
+				$('.zhezhao2').fadeToggle();
+			});
+			commentImg2.mouseout(function() {
+				$('.zhezhao2').fadeIn();
+			});
+
+			//换肤效果实现
+		</script>
+		<script type="text/javascript" src="js/color.js">
+			
+		</script>
+	</body>
 </html>
