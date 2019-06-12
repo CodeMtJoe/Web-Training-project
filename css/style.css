@@ -39,7 +39,8 @@
 		align-items: center;
 	}
 	.disp_text{
-		font-size: 10rem;	
+		font-size: 10rem;
+		font-weight: 0;
 		
 	}
 	nav img{	
