@@ -45,21 +45,25 @@
 			
 			
 			<div id="item3" class="item">
-				<h1>item3</h1>
-				<div class="disp1">
-					<p class="disp_text">CSS+Javascript特效展示</p>
+				<h1 style="text-align: center;">登陆注册</h1>
+				<div class="disp3">
+					<div class="dips3_tp">
+						<div class="zhezhao1"><p>点击了解更多</p></div>
+						<a href="http://mtjoe.cn/comment/login.html" target="_blank"><img src="img/demo11.gif" ></a>
+					</div>
 				</div>
 			</div>
 			<div id="item4" class="item">
-				<h1>item4</h1>
-				<div class="disp1">
-					<p class="disp_text">CSS+Javascript特效展示</p>
+				<h1 style="text-align: center;">评论留言区</h1>
+				<div class="disp4">
+					<div class="zhezhao2"><p>点击了解更多</p></div>
+					<a href="http://mtjoe.cn/comment/comment/message.php" target="_blank"><img src="img/demo12.gif"></a>
 				</div>
 			</div>
 			<div id="item5" class="item">
-				<h1>item5</h1>
+				<h1 style="text-align: center;"></h1>
 				<div class="disp1">
-					<p class="disp_text">CSS+Javascript特效展示</p>
+					<p class="disp_text">广告招租</p>
 				</div>
 			</div>
 		</div>
@@ -113,12 +117,12 @@
 			for(var k=0;k<smImgList.length;k++){
 				smImgList[k].removeAttribute('class');
 			}
-			console.log(j);
+			//console.log(j);
 			bigImg.src="img/"+j+".jpg";
 			smImgList[b].className='img_xz';
 			j++;
 			b++;
-			console.log(j);
+			//console.log(j);
 			if(j>=3&&b>=3){
 				j=1;
 				b=0;
@@ -127,7 +131,26 @@
 			}
 			//console.log(bigImg.getAttribute('src'));	
 		}
+		//执行函数
 		setInterval("changeImg()",2000);
+		
+		//登陆注册特效实现
+		var zhezhao1=$('.dips3_tp').find('.zhezhao1');
+		var zhezhao2=$('.disp4').find('.zhezhao2');
+		var commentImg1=$('.dips3_tp').find('img');
+		var commentImg2=$('.disp4').find('img');
+		zhezhao1.mouseenter(function(){
+			$('.zhezhao1').fadeToggle();
+		});
+		commentImg1.mouseout(function(){
+			$('.zhezhao1').fadeIn();
+		});
+		zhezhao2.mouseenter(function(){
+			$('.zhezhao2').fadeToggle();
+		});
+		commentImg2.mouseout(function(){
+			$('.zhezhao2').fadeIn();
+		});		
 		
 			
 			

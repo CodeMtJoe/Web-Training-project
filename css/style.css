@@ -73,4 +73,44 @@
 		cursor: pointer;
 		
 	}
+	.jumbotron {
+		width: 956px;
+		height: 497px;
+		
+	}
+	.disp3{
+		display: flex;
+		justify-content: center;
+	}
+	#item2,#item3,#item4{
+		margin-bottom: 300px;
+	}
+	.disp4{
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
+	.disp4 img{
+		width: 1072px;
+		height: 614px;
+		box-shadow: 0px 3px 18px 16px rgba(0,0,0,0.38);
+		border-radius: 10px;
+	}
+	.zhezhao1,.zhezhao2{
+		width: 1072px;
+		height: 614px;
+		background-color: rgba(0,0,0,.7);
+		position: absolute;
+		font-size: 5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;		
+	}
+	.dips3_tp {
+		box-shadow: 0px 3px 18px 16px rgba(0,0,0,0.38);
+		border-radius: 10px;
+	}
+	.dips3_tp img{
+		border-radius: 10px;
+	}
 	
