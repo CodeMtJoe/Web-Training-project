@@ -15,7 +15,7 @@
 			<!-- 导航区域 -->
 			<nav>
 				<ul class="nav navbar-inverse nav-stacked">
-					<li><img src="img/lo1go-e1558656878447.jpg"></li>
+					<li><img id="logo" src="img/lo1go-e1558656878447.jpg"></li>
 					<li><a href="#item1" class="act">首页</a></li>
 					<li><a href="#item2">轮播图</a></li>
 					<li><a href="#item3">登陆注册模块</a></li>
@@ -43,7 +43,13 @@
 					
 				</div>
 			</nav>
+			<!-- 内容区域 -->
 			<div id="main">
+				<!-- 时钟 -->
+				<div id="clock" class="clock">
+					
+					
+				</div>
 				<div id="item1" class="item">
 					<div class="disp1">
 						<p class="disp_text"><span style="background-color: #f69a1d;padding: 10px;border-radius: 10px;"><strong style="color: black;">KeyBoard</strong></span>Monster</p>
@@ -102,7 +108,11 @@
 
 		</script>
 		<script type="text/javascript">
+			
 			$(function() {
+				$('#logo').click(function(){
+					alert('hoho...');
+				})
 				//定位导航
 				var main = $('nav');
 				//var abc=$("[href='#item4']").addClass('act');
@@ -180,7 +190,14 @@
 				$('.zhezhao2').fadeIn();
 			});
 
-			//换肤效果实现
+			//时钟
+			var clock=document.getElementById('clock');
+			var time=new Date().toLocaleString();
+			clock.innerHTML=time;
+			setInterval(function(){
+				var time=new Date().toLocaleString();
+				clock.innerHTML=time;
+			},1000);
 		</script>
 		<script type="text/javascript" src="js/color.js">
 			
