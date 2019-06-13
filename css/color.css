@@ -331,21 +331,26 @@ template {
 	-webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, .6);
 	box-shadow: 3px 3px 10px rgba(0, 0, 0, .6)
 }
-
+.palette .palette_color__main img{
+	width: 40px;
+	height: 40px;
+	
+}
 .palette .palette_color__main {
 	background-color: #222222;
 	width: 70px;
 	height: 70px;
 	-webkit-transition: background .3s;
 	transition: background .3s;
-	border-width: 6px;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
 	margin-top: 115px;
 	margin-left: 51px;
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .palette .palette_color {

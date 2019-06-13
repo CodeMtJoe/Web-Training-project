@@ -3,6 +3,7 @@ var _$paletteElement = $('.palette_color');
 function _colorizePaletteItems() {
 	$.each(_$paletteElement, function(i) {
 		$(this).css('background-color', $(this).data('color'));
+		console.log( $(this).data('color'));
 	})
 }
 
